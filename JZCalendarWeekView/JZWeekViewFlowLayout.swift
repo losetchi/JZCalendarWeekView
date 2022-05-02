@@ -585,7 +585,7 @@ open class JZWeekViewFlowLayout: UICollectionViewFlowLayout {
                 availableRanges.removeLast()
                 availableRanges += currentAvailableRanges
             } else {
-                if adjustedRange.upperBound > lastAvailableRange.lowerBound {
+                if adjustedRange.upperBound > lastAvailableRange.upperBound {
                     let availableRange = adjustedRange.upperBound...lastAvailableRange.upperBound
                     availableRanges.removeLast()
                     availableRanges.append(availableRange)
